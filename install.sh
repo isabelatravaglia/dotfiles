@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 backup() {
   target=$1
   if [ -e "$target" ]; then           # Does the config file already exist?
@@ -8,7 +10,7 @@ backup() {
   fi
 }
 
-#!/bin/zsh
+
 for name in *; do
   if [ ! -d "$name" ]; then
     target="$HOME/.$name"
